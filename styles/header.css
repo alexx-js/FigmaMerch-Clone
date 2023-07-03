@@ -1,0 +1,200 @@
+/*header*/
+header {
+    padding: 22px 80px;
+    background: #ffc700;
+    transition: ease .5s;
+}
+
+.bg-white {
+    background: #ffffff;
+}
+
+/*navegacion*/
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*listas en la navegacion*/
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+/*enlaces de la navegacion*/
+header nav ul li a {
+    padding: 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    text-decoration: none; 
+    color: #000000;
+    border: 2px solid #000;
+    border-radius: 30px;
+}
+
+/*menu de la ubicacion*/
+header nav ul li select {
+    padding: 10px 40px 9px 20px;
+    color: #000000;
+    background-color: #ffc700;
+    border: 2px solid #000;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/*opciones del menu de ubicaciones*/
+header nav ul li select option {
+    font-weight: bold;
+}
+
+/*boton de busqueda*/
+#search-btn, #search-container {
+    background: transparent;
+}
+
+/*navegacion derecha*/
+#nav-right {
+    display: flex;
+    justify-content: right;
+}
+
+/*barra de busqueda*/
+#search-input {
+    display: none;
+    padding: 15px 30px;
+    width: 100%;
+    height: 68px;
+    border-bottom: 3px solid #000;
+    font-size: 30px;
+    color: #000000;
+}
+
+#search-input::placeholder {
+    color: #000000;
+}
+
+/*toogles */
+#shop-car {
+    display: flex;
+    gap: 8px;
+}
+
+#ubication {
+    display: none;
+}
+
+#menu {
+    padding: 8px;
+    display: grid;
+    place-content: center;
+    display: none;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+/*meu responsive*/
+#menu-responsive {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    flex-direction: column;
+    gap: 90px;
+    padding: 60px 30px;
+}
+
+#menu-responsive ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#menu-responsive ul li {
+    list-style: none;
+}
+
+#menu-responsive ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#primary {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+#secondary {
+    font-size: 18px;
+}
+
+/*hovers, active y focus de los enlaces*/
+#dropDownUbicationMenu:hover , #dropDownUbicationMenu:hover, 
+#dropDownUbicationMenu:active , #dropDownUbicationMenu:hover,
+#dropDownUbicationMenu:focus , #dropDownUbicationMenu:focus {
+    background-color: #000000;
+    color: #ffffff;
+    transition: ease .7s;
+
+}
+/*media querries*/
+@media only screen and (max-width: 880px) {
+
+    header {
+        padding: 10px 20px;
+        transition: ease .5s;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #shop {
+        display: none;
+    }
+
+    #about {
+        display: none;
+    }
+
+    #shop-a-span {
+        display: none;
+    }
+
+    #logo img {
+        width: 155px;
+        height: 13px;
+    }
+
+    #dropDownUbicationMenu {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 30%;
+        left: 35%;
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+   #dropDownUbicationMenu:hover , header nav ul li select:hover, 
+   #dropDownUbicationMenu:active , header nav ul li select:hover,
+   #dropDownUbicationMenu:focus , header nav ul li select:focus {
+    background-color: #000000;
+    color: #ffffff;
+    transition: ease .7s;
+}
+
+}
+
+@media only screen and (max-width:  767px) {
+    #ubication {
+        display: flex;
+    }
+
+}
+

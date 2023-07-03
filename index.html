@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--icono de la pagina-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="//store.figma.com/cdn/shop/t/9/assets/favicon.static.png?v=112574990093163881831678219731"
+    />
+    <!--links de estilos-->
+    <link rel="stylesheet" href="styles/globals.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <title>The Figma Store</title>
+  </head>
+  <body>
+    <!--navegacion-->
+    <!--barra de busqueda-->
+    <input id="search-input" type="text" placeholder="Search" />
+    <header id="header">
+      <nav>
+        <!--parte izquierda de la navegacion-->
+        <ul id="nav-left">
+          <!--menu toogle-->
+          <picture id="menu">
+            <img src="media/img/menu.svg" alt="menu" />
+          </picture>
+          <!--links del menu-->
+          <li id="shop">
+            <a href="">SHOP</a>
+          </li>
+          <li id="about">
+            <a href="">ABOUT</a>
+          </li>
+          <!--boton de busqueda-->
+          <li>
+            <button id="search-container">
+              <img
+                src="media/img/searchIcon.svg"
+                id="search-btn"
+                alt="searchButton"
+              />
+            </button>
+          </li>
+        </ul>
+        <!--logo central-->
+        <picture id="logo">
+          <img src="media/img/logo.svg" alt="FIGMA STORE" />
+        </picture>
+        <!--parte derecha de la navegacion-->
+        <ul id="nav-right">
+          <!--ubication toogle y menu desplegable para la ubicacion-->
+          <li>
+            <img src="media/img/ubication.svg" id="ubication" alt="ubication" />
+            <select id="dropDownUbicationMenu">
+              <option value="store-ca">CANADA</option>
+              <option value="store-ca">JAPAN</option>
+              <option value="store-ca">UNITED KINGDOM</option>
+              <option value="store-ca">UNITED STATES</option>
+              <option value="store-ca">EUROPEAN UNION</option>
+              <option value="store-ca">I'M JUST BROWSING</option>
+            </select>
+          </li>
+          <!--link carrito de compras-->
+          <li>
+            <a href="" id="shop-car"
+              ><span id="shop-a-span">CART</span>
+              <span id="shop-items">0</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="menu-responsive">
+        <ul id="primary">
+          <li>
+            <a href="">SHOP</a>
+          </li>
+          <li>
+            <a href="">ABOUT</a>
+          </li>
+        </ul>
+        <ul id="secondary">
+            <li>
+                <a href="">Privacy & Terms</a>
+            </li>
+            <li>
+                <a href="">Contact Us</a>
+            </li>
+        </ul>
+      </section>
+    <!--JavaScript Link-->
+    <script src="index.js"></script>
+  </body>
+</html>
+
